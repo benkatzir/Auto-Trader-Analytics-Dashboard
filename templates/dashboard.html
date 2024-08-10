@@ -1,0 +1,35 @@
+<!-- This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/ -->
+<!doctype html>
+<html>
+    <head>
+        <style>
+            body { background: black; font-family: arial; text-align: center; color: white; }
+            td { padding: 15px; }
+            th { background: lightyellow; padding: 10px; }
+        </style>
+        <meta http-equiv="refresh" content="5"> <!-- Refreshes the page every 5 seconds -->
+    </head>
+    <body>
+        <img src="https://financialit.net/sites/default/files/oanda_3.png" />
+        <h1>OANDA CONNECTOR</h1><h3> by Ben Katzir</h3>
+        
+        <h2>CURRENT ACCOUNT STATS:</h2>
+
+        <p1>API RESPONSE STATUS CODE(200 MEANS GOOD): {{status_code}}</p1>
+        <p>STARTING BALANCE: ${{starting_balance}}</p>
+        <p>CURRENT BALANCE: ${{current_balance}}</p>
+        <p>TARGET BALANCE: ${{target_balance}}</p>
+        <p>TARGET PROFIT %: {{target_profit_percent}}%</p>
+        <p>ALLOWED MAX DD %: {{allowed_max_drawdown_percent}}%</p>
+        <p>GAIN/LOSS %: {{gain_loss_percent}}%</p>
+        <p>MARGIN CLOSEOUT %: {{margin_closeout_percent}}%</p>
+        <p>REACHED TARGET PROFIT: {{reached_target_profit}}</p>
+        <p>HIT ALLOWED MAX DRAWDOWN: {{hit_allowed_max_drawdown}} </p>
+        <p>OPEN TRADES: {{open_trades}}</p>
+        <p>OPEN POSITIONS: {{open_positions}}</p>
+        <p>CAN I STILL TRADE: {{can_i_trade}}</p>
+        <p>AM I INVOLVED IN A TRADE: {{involved_in_trade}}</p>
+        <p>LAST TRANSACTION ID: {{lastTransactionID}}</p>
+
+    </body>
+</html>
